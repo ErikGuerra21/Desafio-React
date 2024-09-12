@@ -102,7 +102,7 @@ const BanksPage = (props:BanksPageProps) => {
 
   return (
     <>
-      <h2 className="text-3xl font-semibold mb-6 text-center text-white">Lista de Bancos</h2>
+      <h2 className="text-3xl font-semibold mb-6 text-center text-white">Lista de Bancos de la prueba</h2>
 
       <SearchBar searchQuery={searchQuery} onSearchChange={setSearchQuery} />
 
