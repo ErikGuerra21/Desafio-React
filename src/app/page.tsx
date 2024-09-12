@@ -1,10 +1,13 @@
 // app/page.tsx
-import BanksTable from './Components/BanksTable';
+import BanksPage from "./pages/banks";
+import { GetBanks } from "./pages/banks/application/GetBanks";
 
-export default function Home() {
+
+export default async function Home() {
+ const banks = await GetBanks();
   return (
     <main>
-     <BanksTable/>
+     <BanksPage banksList={banks}/>
     </main>
   );
 }
